@@ -1,0 +1,11 @@
+C:\Projects\C#\PayrollSys\PayrollSys.BL\bin\Release\PayrollSys.BL.dll.config
+C:\Projects\C#\PayrollSys\PayrollSys.BL\bin\Release\PayrollSys.BL.dll
+C:\Projects\C#\PayrollSys\PayrollSys.BL\bin\Release\PayrollSys.BL.pdb
+C:\Projects\C#\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.dll
+C:\Projects\C#\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.SqlServer.dll
+C:\Projects\C#\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.xml
+C:\Projects\C#\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.SqlServer.xml
+C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.csprojAssemblyReference.cache
+C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.csproj.CopyComplete
+C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.dll
+C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.pdb

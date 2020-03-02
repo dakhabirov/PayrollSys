@@ -1,0 +1,62 @@
+﻿<Window x:Class="PayrollSys.WPF.View.BranchesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayrollSys.WPF.View"
+        mc:Ignorable="d"
+        Title="Система расчета оплаты труда"
+        Height="Auto"
+        Width="Auto"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Background="#BDD6FF">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.33*"/>
+                <RowDefinition Height="0.33*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Menu Grid.ColumnSpan="3" Height="Auto" VerticalAlignment="Top" FontSize="16">
+                <MenuItem Header="Файл">
+                    <MenuItem Name="mExit" Header="Выход" Click="MExit_Click"/>
+                </MenuItem>
+                <MenuItem Header="Действие">
+                    <MenuItem Name="mToCount" Header="Посчитать количество сотрудников в филиале" Click="MToCount_Click"/>
+                    <MenuItem Name="mGenMidWageOnBranch" Header="Показать список филиалов с указанием средней зарплаты в филиале" Click="MGenMidWageOnBranch_Click"/>
+                </MenuItem>
+                <MenuItem Name="mRefresh" Header="Обновить" Click="MRefresh_Click"/>
+            </Menu>
+
+            <DataGrid Grid.Row="1" Name="dgBranches" Grid.ColumnSpan="3" ItemsSource="{Binding Branches}" SelectedItem="{Binding SelectedBranch}" Style="{StaticResource CommonDataGridStyle}" AlternatingRowBackground="LightYellow" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Город" Binding="{Binding City}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid Grid.Row="2" Name="dgSubunits" Grid.ColumnSpan="3" AutoGenerateColumns="False" ItemsSource="{Binding SelectedBranch.BranchSubunits}" Style="{StaticResource CommonDataGridStyle}" AlternatingRowBackground="LightCyan" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Подразделение" Binding="{Binding Subunit.Name}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid Grid.Row="3" Name="dgWorkers" Grid.ColumnSpan="3" AutoGenerateColumns="False" ItemsSource="{Binding SelectedBranch.Workers}" Style="{StaticResource CommonDataGridStyle}" AlternatingRowBackground="LightCyan" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Сотрудник" Binding="{Binding Fullname}"/>
+                    <DataGridTextColumn Header="Должность" Binding="{Binding Position}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <GridSplitter Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="5" ShowsPreview="False"/>
+            <GridSplitter Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="5" ShowsPreview="False"/>
+
+            <Button Grid.Row="4" Grid.Column="2" Name="bInsert" Content="Добавить" Style="{StaticResource CommonControlStyle}" Background="LightGreen" Click="BInsert_Click"/>
+            <Button Grid.Row="4" Grid.Column="1" Name="bUpdate" Content="Редактировать" Style="{StaticResource CommonControlStyle}" Background="LightYellow" Click="BUpdate_Click"/>
+            <Button Grid.Row="4" Grid.Column="0" Name="bDelete" Content="Удалить" Style="{StaticResource CommonControlStyle}" Background="LightPink" Click="BDelete_Click"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="PayrollSys.WPF.View.StatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayrollSys.WPF.View"
+        mc:Ignorable="d"
+        Title="Система расчета оплаты труда"
+        Height="Auto"
+        Width="Auto"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Background="#BDD6FF">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Menu Grid.ColumnSpan="3" Height="Auto" VerticalAlignment="Top" FontSize="16">
+                <MenuItem Header="Файл">
+                    <MenuItem Name="mExit" Header="Выход" Click="MExit_Click"/>
+                </MenuItem>
+                <MenuItem Header="Действие">
+                    <MenuItem Name="mPayroll" Header="Произвести расчет заработной платы" Click="MPayroll_Click"/>
+                    <MenuItem Name="mGenPaySheet" Header="Сформировать расчетный лист" Click="MGenPaySheet_Click"/>
+                    <MenuItem Name="mGenWorkersListOne" Header="Показать список сотрудников, размер зарплаты которых в больше указанного" Click="MGenWorkersListOne_Click"/>
+                    <MenuItem Name="mGenWorkersListTwo" Header="Показать список сотрудников, которые отработали все требуемые часы согласно трудовому календарю" Click="MGenWorkersListTwo_Click"/>
+                    <MenuItem Name="mGenWorkersRating" Header="Показать список сотрудников с наибольшим размером зарплаты в указанном месяце" Click="MGenMWorkersRating_Click"/>
+                </MenuItem>
+                <MenuItem Name="mRefresh" Header="Обновить" Click="MRefresh_Click"/>
+            </Menu>
+
+            <DataGrid Grid.Row="1" Name="dgStatistics" Grid.ColumnSpan="3" ItemsSource="{Binding WorkerCalendars}" Style="{StaticResource CommonDataGridStyle}" AlternatingRowBackground="LightYellow" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Сотрудник" Binding="{Binding Worker.Fullname}"/>
+                    <DataGridTextColumn Header="Филиал" Binding="{Binding Worker.Branch.City}"/>
+                    <DataGridTextColumn Header="Подразделение" Binding="{Binding Worker.Subunit.Name}"/>
+                    <DataGridTextColumn Header="Тип оплаты труда" Binding="{Binding Worker.PaymentType}"/>
+                    <DataGridTextColumn Header="Месяц" Binding="{Binding Calendar.Month}"/>
+                    <DataGridTextColumn Header="План (ч)" Binding="{Binding Calendar.Hours}"/>
+                    <DataGridTextColumn Header="Отработано (ч)" Binding="{Binding WorkedHours}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Grid.Row="2" Grid.Column="0" Name="bDelete" Content="Удалить" Style="{StaticResource CommonControlStyle}" Background="LightPink" Click="BDelete_Click"/>
+            <Button Grid.Row="2" Grid.Column="1" Name="bUpdate" Content="Редактировать" Style="{StaticResource CommonControlStyle}" Background="LightGoldenrodYellow" Click="BUpdate_Click"/>
+            <Button Grid.Row="2" Grid.Column="2" Name="bInsert" Content="Добавить" Style="{StaticResource CommonControlStyle}" Background="LightGreen" Click="BInsert_Click"/>
+        </Grid>
+    </Grid>
+</Window>

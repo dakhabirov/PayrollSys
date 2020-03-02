@@ -1,0 +1,40 @@
+﻿<Window x:Class="PayrollSys.WPF.View.SubunitsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayrollSys.WPF.View"
+        mc:Ignorable="d"
+        Title="Система расчета оплаты труда"
+        Height="Auto"
+        Width="Auto"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Background="#BDD6FF">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Height="Auto" VerticalAlignment="Top" FontSize="16">
+                <MenuItem Header="Файл">
+                    <MenuItem Name="mExit" Header="Выход" Click="MExit_Click"/>
+                </MenuItem>
+                <MenuItem Name="mRefresh" Header="Обновить" Click="MRefresh_Click"/>
+            </Menu>
+
+            <DataGrid Grid.Row="1" Name="dgSubunits" Grid.ColumnSpan="2" ItemsSource="{Binding Subunits}" Style="{StaticResource CommonDataGridStyle}" AlternatingRowBackground="LightYellow" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Наименование" Binding="{Binding Name}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Grid.Row="2" Grid.Column="1" Name="bInsert" Content="Добавить" Style="{StaticResource CommonControlStyle}" Background="LightGreen" Click="BInsert_Click"/>
+            <Button Grid.Row="2" Grid.Column="0" Name="bDelete" Content="Удалить" Style="{StaticResource CommonControlStyle}" Background="LightPink" Click="BDelete_Click"/>
+        </Grid>
+    </Grid>
+</Window>

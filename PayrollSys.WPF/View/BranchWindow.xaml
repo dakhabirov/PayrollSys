@@ -1,0 +1,32 @@
+﻿<Window x:Class="PayrollSys.WPF.View.BranchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayrollSys.WPF.View"
+        mc:Ignorable="d"
+        Title="Система расчета оплаты труда"
+        Height="Auto"
+        Width="Auto"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#BDD6FF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Город" Style="{StaticResource CommonControlStyle}"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="tbCity" Style="{StaticResource CommonControlStyle}" Grid.ColumnSpan="2"/>
+
+        <Button Grid.Row="3" Grid.Column="1" Name="bEnter" Content="Отмена" Style="{StaticResource CommonControlStyle}" Background="LightGoldenrodYellow" Click="BCancel_Click"/>
+        <Button Grid.Row="3" Grid.Column="2" Name="bCancel" Content="Добавить" Style="{StaticResource CommonControlStyle}" Background="LightGoldenrodYellow" Click="BEnter_Click"/>
+    </Grid>
+</Window>

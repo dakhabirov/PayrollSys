@@ -1,0 +1,38 @@
+﻿<Window x:Class="PayrollSys.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayrollSys.WPF"
+        mc:Ignorable="d"
+        Title="Система расчета оплаты труда"
+        Height="Auto"
+        Width="Auto"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid Background="#BDD6FF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.ColumnSpan="3" Height="Auto" VerticalAlignment="Top" FontSize="16">
+            <MenuItem Header="Файл">
+                <MenuItem Name="mInitialize" Header="Инициализировать случайные записи (для тестирования)" Click="MInitialize_ClickAsync"/>
+                <MenuItem Name="mExit" Header="Выход" Click="MExit_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <Button Grid.Row="1" Name="bWorkers" Content="Сотрудники" Style="{StaticResource CommonControlStyle}" FontSize="50" Background="LightGoldenrodYellow" Click="BWorkers_Click"/>
+        <Button Grid.Row="2" Name="bBranches" Content="Филиалы" Style="{StaticResource CommonControlStyle}" FontSize="50" Background="LightGoldenrodYellow" Click="BBranches_Click"/>
+        <Button Grid.Row="3" Name="bSubunits" Content="Подразделения" Style="{StaticResource CommonControlStyle}" FontSize="50" Background="LightGoldenrodYellow" Click="BSubunits_Click"/>
+        <Button Grid.Row="4" Name="bStatistics" Content="Статистика сотрудников" Style="{StaticResource CommonControlStyle}" FontSize="50" Background="LightGoldenrodYellow" Click="BStatistics_Click"/>
+        <Button Grid.Row="5" Name="bCalendar" Content="Трудовой календарь" Style="{StaticResource CommonControlStyle}" FontSize="50" Background="LightGoldenrodYellow" Click="BCalendar_Click"/>
+    </Grid>
+</Window>

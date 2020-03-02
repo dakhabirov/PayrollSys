@@ -1,0 +1,58 @@
+﻿<Window x:Class="PayrollSys.WPF.View.WorkerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PayrollSys.WPF.View"
+        mc:Ignorable="d"
+        Title="Система расчета оплаты труда"
+        Height="Auto"
+        Width="Auto"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="182*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#BDD6FF" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Идентификатор" Style="{StaticResource CommonControlStyle}" HorizontalAlignment="Right"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Полное имя" Style="{StaticResource CommonControlStyle}" HorizontalAlignment="Right"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Должность" Style="{StaticResource CommonControlStyle}" HorizontalAlignment="Right"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Филиал" Style="{StaticResource CommonControlStyle}" HorizontalAlignment="Right"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="Подразделение" Style="{StaticResource CommonControlStyle}" HorizontalAlignment="Right"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Тип оплаты труда" Style="{StaticResource CommonControlStyle}" HorizontalAlignment="Right"/>
+            <Label Grid.Row="6" Grid.Column="0" Content="Размер оплаты" Style="{StaticResource CommonControlStyle}" HorizontalAlignment="Right"/>
+
+            <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Name="tbWorkerId" Style="{StaticResource CommonControlStyle}" IsEnabled="False"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Name="tbFullname" Style="{StaticResource CommonControlStyle}"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Name="tbPosition" Style="{StaticResource CommonControlStyle}"/>
+            <ComboBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Name="cbBranch" Style="{StaticResource CommonControlStyle}"/>
+            <ComboBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Name="cbSubunit" Style="{StaticResource CommonControlStyle}"/>
+            <ComboBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Name="cbPaymentType" Style="{StaticResource CommonControlStyle}">
+                <ComboBoxItem Content="Фиксированная ежемесячная оплата"/>
+                <ComboBoxItem Content="Почасовая оплата (сдельная)"/>
+            </ComboBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Name="tbSalary" Style="{StaticResource CommonControlStyle}"/>
+
+            <Button Grid.Row="7" Grid.Column="2" Name="bEnter" Content="Ок" Style="{StaticResource CommonControlStyle}" Background="LightGoldenrodYellow" Click="BEnter_Click"/>
+            <Button Grid.Row="7" Grid.Column="1" Name="bCancel" Content="Отмена" Style="{StaticResource CommonControlStyle}" Background="LightGoldenrodYellow" Click="BCancel_Click"/>
+        </Grid>
+    </Grid>
+</Window>
