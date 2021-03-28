@@ -57,7 +57,6 @@
 
 ### Статистика сотрудников
 ![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/StatisticsWindow.PNG "Статистика сотрудников")
-<<<<<<< HEAD
 
 ### Отчеты
 
@@ -69,5 +68,3 @@
 
 ##### Список N (задается пользователем) сотрудников с наибольшим размером зарплаты в указанном месяце
 ![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/Report_3.PNG "Статистика сотрудников")
-=======
->>>>>>> abd62c124559945464e46f15a1c770d35b733624
