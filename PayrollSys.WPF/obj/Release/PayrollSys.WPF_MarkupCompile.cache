@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Projects\C#\PayrollSys\PayrollSys.WPF\obj\Release\
+C:\Projects\dotnet\WPF\PayrollSys\PayrollSys.WPF\obj\Release\
 PayrollSys.WPF
 none
 false
 TRACE
-C:\Projects\C#\PayrollSys\PayrollSys.WPF\App.xaml
+C:\Projects\dotnet\WPF\PayrollSys\PayrollSys.WPF\App.xaml
 151149650605
 
 191696593874
-17-1002004421
+171817584848
 View\BranchesWindow.xaml;View\BranchWindow.xaml;View\CalendarWindow.xaml;View\GenPaySheetWindow.xaml;View\GetValue.xaml;View\MainWindow.xaml;View\ResultWindow.xaml;View\StatisticsWindow.xaml;View\Subunit.xaml;View\Subunits.xaml;View\UpdateBranchWindow.xaml;View\UpdateCalendar.xaml;View\WorkerCalendar.xaml;View\WorkersWindow.xaml;View\WorkerWindow.xaml;
 
 False

@@ -9,3 +9,15 @@ C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.csprojAssembly
 C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.csproj.CopyComplete
 C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.dll
 C:\Projects\C#\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.pdb
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\bin\Release\PayrollSys.BL.dll.config
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\bin\Release\PayrollSys.BL.dll
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\bin\Release\PayrollSys.BL.pdb
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.dll
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.xml
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.csprojAssemblyReference.cache
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.csproj.CoreCompileInputs.cache
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.csproj.CopyComplete
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.dll
+C:\Users\dakha\Downloads\PayrollSys\PayrollSys\PayrollSys.BL\obj\Release\PayrollSys.BL.pdb
