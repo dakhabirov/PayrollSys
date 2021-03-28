@@ -48,7 +48,7 @@
 ### Трудовой календарь
 ![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/CalendarWindow.PNG "Трудовой календарь")
 
-### Редактирование количество часов в трудовом календаре
+### Редактирование количества часов в трудовом календаре
 ![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/UpdateCalendarWindow.PNG "Редактирование количество часов в трудовом календаре")
 
 
