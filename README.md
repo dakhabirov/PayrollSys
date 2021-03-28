@@ -57,3 +57,14 @@
 
 ### Статистика сотрудников
 ![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/StatisticsWindow.PNG "Статистика сотрудников")
+
+### Отчеты
+
+##### Средняя заработная плата в филиалах
+![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/Report_1.PNG "Статистика сотрудников")
+
+##### Список сотрудников, размер зарплаты которых > X (задается пользователем)
+![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/Report_2.PNG "Статистика сотрудников")
+
+##### Список N (задается пользователем) сотрудников с наибольшим размером зарплаты в указанном месяце
+![alt text](https://github.com/dakhabirov/PayrollSys/blob/master/Resourses/Screenshots/Report_3.PNG "Статистика сотрудников")
