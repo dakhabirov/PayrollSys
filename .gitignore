@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/PayrollSys.BL/.vs
+/PayrollSys.WPF/.vs
+/PayrollSys.BL/bin/Debug
+/PayrollSys.BL/obj/Debug
+/PayrollSys.WPF/bin/Debug
+/PayrollSys.WPF/obj/Debug
