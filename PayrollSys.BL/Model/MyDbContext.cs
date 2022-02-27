@@ -8,7 +8,7 @@ namespace PayrollSys.BL
     /// </summary>
     public class MyDbContext : DbContext
     {
-        public MyDbContext() : base("PayrollSys")
+        public MyDbContext() : base("Data Source=localhost;Initial Catalog=PayrollSys;Integrated Security=SSPI;")   // строка подключения к базе данных
         {
             // Инициализирует базу данных и указывает EF, что если модель изменилась, то воссоздать новую
             Database.SetInitializer(new DbContextInitializer());
