@@ -5,7 +5,7 @@
 /.vs
 /PayrollSys.BL/.vs
 /PayrollSys.WPF/.vs
-/PayrollSys.BL/bin/Debug
-/PayrollSys.BL/obj/Debug
-/PayrollSys.WPF/bin/Debug
-/PayrollSys.WPF/obj/Debug
+/PayrollSys.BL/bin
+/PayrollSys.BL/obj
+/PayrollSys.WPF/bin
+/PayrollSys.WPF/obj
